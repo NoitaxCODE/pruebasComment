@@ -1,0 +1,24 @@
+.imgCarrusel{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+
+
+#imgCarrusel1{
+    background-image: url("/img/adrian-dascal-sLyaK8B5N2o-unsplash.jpg");
+}
+#imgCarrusel2{
+    background-image: url("/img/jeremy-thomas-pq2DJBntZW0-unsplash.jpg");
+    background-position-y: bottom;
+}
+#imgCarrusel3{
+    background-image: url("/img/nicolas-perez-eNWcXCbE5fI-unsplash.jpg");
+}
+
+.boxCommentPosted{
+    border-top: 3px solid rgb(207, 207, 207);
+    border-radius: 3px;
+}
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 px-5">
+        <a href="#" class="navbar-brand h1">El firmamento</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#listPrimary">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="listPrimary">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a href="#" class="nav-link">Inicio</a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">Eventos</a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">Noticias</a> </li>              
+                <li class="nav-item"> <a href="#" class="nav-link">Galeria</a> </li>              
+                <li class="nav-item"> <a href="#" class="nav-link">Tienda</a> </li>              
+                <li class="nav-item"> <a href="#" class="nav-link">Contacto</a> </li>              
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <div id="imgCarrusel1" class="imgCarrusel w-100"></div>
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <div id="imgCarrusel2" class="imgCarrusel w-100"></div>
+          </div>
+          <div class="carousel-item">
+            <div id="imgCarrusel3" class="imgCarrusel w-100"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="container mt-5">
+        <h2 class="text-center display-4 mb-4">COMENTARIOS</h2>
+        <div id="oldComments" class="row row-cols-1 mt-4">
+          <textarea id="box-comments" rows="4" placeholder="Escribe un comentario..." class="form-control mb-2 mt-4" aria-label="With textarea"></textarea>
+          <button id="btnComment" class="mb-1 align-self-end btn btn-lg btn-outline-success">Enviar</button>
+          <div id="boxCommentPosted" class="bg-light px-3 pt-2 col-12 mt-3 boxCommentPosted">
+          </div>
+        </div>
+      </div>
+
+    <!-- BOOSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="css/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <script src="/js/inicializeFirebase.js"></script>
+    <!-- JS PERSONALIZADOS -->
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>
